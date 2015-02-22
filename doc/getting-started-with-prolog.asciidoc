@@ -309,7 +309,7 @@ doing all of this.  At the prompt, just type `edit.`.  This will bring up the
 PceEmacs editor with the `facts.pl` file loaded.
 
 .PceEmacs editing 'facts.pl'
-image:pceemacs.png[]
+image:pceemacs.png[width="50%",link="pceemacs.png"]
 
 Now, you can edit the file within this editor, which provides some syntax
 highlighting and basic static analysis.

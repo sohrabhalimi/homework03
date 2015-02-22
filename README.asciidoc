@@ -1,0 +1,5 @@
+homework03
+==========
+
+Coming soon…  Check out link:doc/getting-started-with-prolog.asciidoc[Getting
+started with Prolog] in the meantime.
