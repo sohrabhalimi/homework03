@@ -1,5 +1,26 @@
-homework03
-==========
+homework03: Basic Prolog
+========================
+:toc: left
+:toc-title: homework03
 
-Coming soon…  Check out link:doc/getting-started-with-prolog.asciidoc[Getting
-started with Prolog] in the meantime.
+
+Objectives
+----------
+
+When you have completed this homework, you should be able to:
+
+* Write facts into a Prolog database and be able to perform queries against them
+* Understand how to use variables to unify against facts
+* Be able to write recursive rules
+
+
+Getting started with Prolog
+---------------------------
+
+In order to complete this assignment, you will need to learn how to set up and
+use Prolog.  While you can use any implementation of Prolog you wish, I suggest
+you use SWI-Prolog as this will be implementation of Prolog I will be supporting.
+
+To learn how to install and use SWI-Prolog, please refer to the
+link:doc/getting-started-with-prolog.asciidoc[Getting started with Prolog]
+document.
