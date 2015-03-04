@@ -55,8 +55,6 @@ parent(alice, valentina).
 % the second argument
 %
 
-mother(A,B) :- parent(A,B), female(A).
-
 :- begin_tests(mother).
 
 test(mother) :-
@@ -85,7 +83,6 @@ test(mother) :-
 % the second argument.  Be sure to enable the test.
 %
 
-father(A,B) :-  parent(A,B), male(A).
 
 :- begin_tests(father, [blocked('step 2')]).
 
@@ -116,9 +113,6 @@ test(father) :-
 % enable the test.
 %
 
-ancestor(A,B) :- parent(A,B);
-                 parent(A, Q),
-                 ancestor(Q,B).
 
 :- begin_tests(ancestor, [blocked('step 3')]).
 
@@ -143,11 +137,6 @@ test(ancestor, [nondet]) :-
 % so, define a rule descendant2/2 that does this.
 %
 
-descendant(A,B) :- parent(B,A);
-                   parent(W,A),
-		   descendant(W,B).
-
-
 :- begin_tests(descendant, [blocked('step 4')]).
 
 test(descendant, [nondet]) :-
@@ -170,9 +159,6 @@ test(descendant, [nondet]) :-
 % any surprising results?  How would you explain what is happening?
 %
 
-sibling(A,B):- parent(O,A),
-	       parent(O,B).
-
 
 :- begin_tests(sibling, [blocked('step 5')]).
 
@@ -189,9 +175,5 @@ test(sibling, [nondet]) :-
 % Now it's your turn to define a rule that describes a family relation.
 % Impress me.
 %
-
-
-uncleCheck(X,Y) :- parent(O,A),parent(O,B),male(A);
-		  parent(A,Z),uncleCheck(Z,A).
 
 % vim:set ft=prolog:
